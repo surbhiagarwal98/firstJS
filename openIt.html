@@ -1,0 +1,36 @@
+<html>
+<head>
+
+
+<script type="text/javascript">
+function mouseOver()
+{
+document.getElementById("no").style.color="red";
+var x=Math.floor(Math.random()*300);
+var y=Math.floor(Math.random()*300);
+document.getElementById("no").style.position='relative';
+document.getElementById("no").style.top=x+'px';
+document.getElementById("no").style.left=y+'px';
+}
+function mouseOut()
+{
+document.getElementById("no").style.color="black";
+}
+function mouseclick(){
+document.write("So,you accept you are a fool.");
+}
+</script>
+
+<style>
+body{background-color: powderblue;}
+</style>
+
+
+<body><center>
+<h1><b>Answer the question to proceed further..<br>Are you a fool?<b><h1><br>
+<button id="yes" style="background-color:green" onclick="mouseclick()">YES</button>
+<button id="no" style="background-color:green" onmouseover="mouseOver()" onmouseout="mouseOut()" >NO</button>
+</center>
+</body>
+</head>
+</html>
